@@ -30,8 +30,5 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-<<<<<<< HEAD
-        run: chmod +x ./classroom/gradlew && ./classroom/gradlew build sonar --info
-=======
-        run: chmod +x ./classroom/gradlew && ./classroom/gradlew build sonar --info
->>>>>>> d1065d53796fe9d965167e7b9a3aa4a87733b35f
+
+        run: chmod +x ./gradlew && ./gradlew build sonar --info
