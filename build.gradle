@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id "org.sonarqube" version "4.3.1.3277"
+    id 'jacoco'
 }
 
 group 'org.example'
@@ -13,7 +15,24 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
-
+jacoco {
+    toolVersion = '0.8.9'
+}
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
+sonar {
+    properties {
+        property "sonar.projectKey", "bhos-qa_l3-sonarcloud-BalaqizOrucova"
+        property "sonar.organization", "bhos-qa"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
+}
 test {
     useJUnitPlatform()
+    finalizedBy jacocoTestReport
+
 }
