@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LibrarySystemTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-09-30T07:00:38" hostname="ORUJOVA" time="0.022">
+<testsuite name="LibrarySystemTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-09-30T07:07:51" hostname="ORUJOVA" time="0.041">
   <properties/>
-  <testcase name="testAddBook()" classname="LibrarySystemTest" time="0.015"/>
-  <testcase name="testCheckOutBook()" classname="LibrarySystemTest" time="0.001"/>
-  <testcase name="testSearchBooksByTitle()" classname="LibrarySystemTest" time="0.001"/>
-  <testcase name="testRemoveBook()" classname="LibrarySystemTest" time="0.0"/>
+  <testcase name="testAddBook()" classname="LibrarySystemTest" time="0.03"/>
+  <testcase name="testCheckOutBook()" classname="LibrarySystemTest" time="0.002"/>
+  <testcase name="testSearchBooksByTitle()" classname="LibrarySystemTest" time="0.003"/>
+  <testcase name="testRemoveBook()" classname="LibrarySystemTest" time="0.001"/>
   <testcase name="testReturnBook()" classname="LibrarySystemTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

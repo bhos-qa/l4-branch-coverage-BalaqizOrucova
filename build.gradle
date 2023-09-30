@@ -26,7 +26,7 @@ jacocoTestReport {
 }
 sonar {
     properties {
-        property "sonar.projectKey", "bhos-qa_l3-sonarcloud-BalaqizOrucova"
+        property "sonar.projectKey", "bhos-qa_l4-branch-coverage-BalaqizOrucova"
         property "sonar.organization", "bhos-qa"
         property "sonar.host.url", "https://sonarcloud.io"
     }
