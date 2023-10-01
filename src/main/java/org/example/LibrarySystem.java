@@ -67,5 +67,16 @@ public class LibrarySystem {
     public int getTotalBooksCount() {
         return books.size();
     }
+
+    public class VulnerableWebPageGenerator {
+
+        // Vulnerable method that generates an HTML page with user input
+        public String generatePage(String userContent) {
+            // Vulnerable code: directly embedding user input in HTML without proper escaping
+            String html = "<html><body>" + userContent + "</body></html>";
+            return html;
+        }
+    }
+
 }
 
